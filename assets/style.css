@@ -4,6 +4,8 @@
 
 body {
     background: #AAB2D5;
+    width: 100vw;
+    height: 100vh;
 }
 
 #logo {
@@ -13,13 +15,14 @@ body {
     padding-top: 40px;
     padding-left: 40px;
 }
+
 #logo:hover {
     width: 10.5%;
     height: auto;
     margin: 0 auto;
     padding-top: 40px;
     padding-left: 40px;
-    
+
 }
 
 .sinbordefondo {
@@ -37,8 +40,8 @@ body {
     line-height: 150%;
 }
 
-#contenido{
-    
+#contenido {
+
     border: 0;
     position: absolute;
     width: 577px;
@@ -65,7 +68,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    
+
 }
 
 
@@ -103,11 +106,7 @@ body {
     font-size: 24px;
     line-height: 120%;
     text-align: center;
-    color: #343A40;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+    color: #343A40;   
     top: 283px;
 
 }
@@ -180,15 +179,16 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 150%; 
+    line-height: 150%;
     color: #495057;
     opacity: 0.8;
 }
-#exclamacion{
+
+#exclamacion {
     margin-right: 5px;
 }
 
-#copiar{
+#copiar {
     background-color: #0A3871;
     color: #FFFFFF;
     font-family: 'Inter';
@@ -208,7 +208,7 @@ body {
     position: absolute;
     top: 90%;
     left: 5%;
-    opacity: 0; 
+    opacity: 0;
 }
 
 
@@ -269,37 +269,84 @@ body {
     }
 }
 
+/* *************************************************************************************************************** */
+/* *************************************************************************************************************** */
 /* Tablet */
 
-@media only screen and (max-width: 1400px){
-    
-    #botones {
-        position: absolute;
-        top: 70%;
-        left: 20%;
-        width: auto;
+@media only screen and (max-width: 1300px) {
+    * {
+        margin: 0 auto;
     }
-    
+
+    body {
+        background: #AAB2D5;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #logo {
+        width: 20%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+
+
+    .sinbordefondo {
+        background-color: #AAB2D5;
+        border: 0;
+        position: absolute;
+        width: 577px;
+        height: 48px;
+        left: 20%;
+        top: 168px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+    }
+
+    #contenido {
+
+        border: 0;
+        position: absolute;
+        width: 577px;
+        height: 48px;
+        left: 20%;
+        top: 200px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        opacity: 0;
+        margin-top: 25%;
+    }
+
+
     #contenedor {
         position: absolute;
-        width: 80%;
-        height:fit-content;
-        left: 10%;
-        top: 80%;
+        width: 100vw;
+        height: 200px;
+        left: 0%;
+        top: 100%;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.6);
         border-radius: 32px;
     }
 
-
     #muneco {
         position: relative;
         width: 0px;
         height: 0px;
-        left: 30px;
-        top: 240px;
-    
+        left: 0px;
+        top: 0px;
     }
+
+
+
     #noencontrado {
         position: relative;
         width: 336px;
@@ -307,60 +354,416 @@ body {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 24px;
         line-height: 120%;
         text-align: center;
         color: #343A40;
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
-        top: 10%;
-        padding: 5%;
-    
+        top: 20px;
+
     }
+
     #instruccion {
         position: relative;
-        top: 10%;
         width: 336px;
-        height: 48px;
+        height: 58px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 150%;
         text-align: center;
-        color: #495057;
-        flex: none;
-        order: 1;
-        align-self: stretch;
-        flex-grow: 0;
-        margin-top: 20px;
-        padding-bottom: 10px;
+        color: #343A40;
+        top: 0px;
     }
 
-    #copiar{
+    #botones {
+        position: absolute;
+        top: 85%;
+        left: 10%;
+        width: auto;
+    }
+
+    #encriptar {
         background-color: #0A3871;
         color: #FFFFFF;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    #desencriptar {
+        color: #3f2362;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    #encriptar,
+    #desencriptar {
+        width: 320px;
+        height: 50px;
+        border: 1px solid #343A40;
+        border-radius: 24px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 5%px;
+        cursor: pointer;
+    }
+
+    #textito {
+        position: absolute;
+        top: 83%;
+        left: 20%;
+        width: auto;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 1;
+    }
+
+    #exclamacion {
+        margin-right: 5px;
+    }
+
+    #copiar {
+        position: absolute;
+        left: 30%;
+        width: auto;
+        background-color: #0A3871;
+        color: #FFFFFF;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
         line-height: 19px;
         text-align: center;
         width: 320px;
         height: 50px;
         border: 1px solid #343A40;
         border-radius: 24px;
-        
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 5%px;
         cursor: pointer;
         position: absolute;
-        top: auto;
-        left: 5%;
-        opacity: 0; 
+        top: 93%;
+        opacity: 1;
+    }
+
+
+
+    /* Parpadeo texto */
+    .parpadea {
+
+        animation-name: parpadeo;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-name: parpadeo;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    @-moz-keyframes parpadeo {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @-webkit-keyframes parpadeo {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @keyframes parpadeo {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
     }
 }
 
 
 
-@media only screen and (max-width: 600px){}
+@media only screen and (max-width: 760px) {
+    * {
+        margin: 0 auto;
+    }
+
+    body {
+        background: #AAB2D5;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #logo {
+        width: 20%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+
+
+    .sinbordefondo {
+        background-color: #AAB2D5;
+        border: 0;
+        position: absolute;
+        width: 577px;
+        height: 48px;
+        left: 20%;
+        top: 168px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+    }
+
+    #contenido {
+
+        border: 0;
+        position: absolute;
+        width: 577px;
+        height: 48px;
+        left: 20%;
+        top: 200px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        opacity: 0;
+        margin-top: 25%;
+    }
+
+    aside{
+        width:100vh;
+    }
+
+    #contenedor {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        left: 35%;
+        top: 800px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.6);
+        border-radius: 32px;
+    }
+
+    #muneco {
+        position: relative;
+        width: 0px;
+        height: 0px;
+        left: 0px;
+        top: 0px;
+    }
+
+
+
+    #noencontrado {
+        position: relative;
+        width: 336px;
+        height: 58px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #343A40;
+        top: 20px;
+
+    }
+
+    #instruccion {
+        position: relative;
+        width: 336px;
+        height: 58px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        color: #343A40;
+        top: 0px;
+    }
+
+    #botones {
+        position: absolute;
+        top: 95%;
+        left: 35%;
+        width: auto;
+    }
+
+    #encriptar {
+        background-color: #0A3871;
+        color: #FFFFFF;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    #desencriptar {
+        color: #3f2362;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    #encriptar,
+    #desencriptar {
+        width: 320px;
+        height: 50px;
+        border: 1px solid #343A40;
+        border-radius: 24px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 5%px;
+        cursor: pointer;
+    }
+
+    #textito {
+        position: absolute;
+        top: 83%;
+        left: 50%;
+        width: auto;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 1;
+    }
+
+    #exclamacion {
+        margin-right: 5px;
+    }
+
+    #copiar {
+        position: absolute;
+        left: 3%;
+        width: auto;
+        background-color: #0A3871;
+        color: #FFFFFF;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+        width: 320px;
+        height: 50px;
+        border: 1px solid #343A40;
+        border-radius: 24px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 5%px;
+        cursor: pointer;
+        position: absolute;
+        top: 93%;
+        opacity: 1;
+    }
+
+
+
+    /* Parpadeo texto */
+    .parpadea {
+
+        animation-name: parpadeo;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-name: parpadeo;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    @-moz-keyframes parpadeo {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @-webkit-keyframes parpadeo {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @keyframes parpadeo {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+}
